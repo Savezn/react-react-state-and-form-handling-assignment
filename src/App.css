@@ -120,6 +120,8 @@ input::placeholder {
 }
 
 .input-container {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
 }
 
@@ -130,9 +132,21 @@ label {
 }
 
 .post-form {
+  display: flex;
+  flex-direction: column;
   border: 5px solid var(--secondary-color);
   padding: 30px;
   background: var(--highlight-color);
+}
+
+.error {
+  color: white;
+  background-color: rgb(177, 61, 61);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: fit-content;
 }
 
 form h1 {
